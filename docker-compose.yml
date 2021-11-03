@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  dev:
+    image: ymidori/django_practice_poll:dev
+    volumes:
+      - .:/opt/django_practice_poll:rw
+    tty:
+      true
+    working_dir: "/opt/django_practice_poll"
